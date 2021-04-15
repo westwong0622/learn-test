@@ -1,4 +1,10 @@
+@font-face {
+  font-family: "Monoton";
+  src: url("./font/Monoton.ttf") format("truetype");
+}
+
 .hello {
   color: red;
   background: url("./icon.png");
+  font-family: "Monoton";
 }
