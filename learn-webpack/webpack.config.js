@@ -16,4 +16,7 @@ module.exports = {
     filename: "[name].[contenthash].js",
     clean: true,
   },
+  optimization: {
+    runtimeChunk: "single",
+  },
 };
