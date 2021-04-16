@@ -6,5 +6,6 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "webpack-numbers.js",
+    library: "webpackNumbers",
   },
 };
