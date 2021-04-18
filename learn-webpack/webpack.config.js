@@ -11,6 +11,14 @@ module.exports = {
     contentBase: "./dist",
     hot: true,
   },
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"],
+      },
+    ],
+  },
   plugins: [new HtmlWebpackPlugin({})],
   output: {
     path: path.resolve(__dirname, "dist"),
