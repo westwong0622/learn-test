@@ -1,5 +1,4 @@
 const { file, parse } = require("./globals.js");
-import "babel-polyfill";
 
 function component() {
   const element = document.createElement("div");
