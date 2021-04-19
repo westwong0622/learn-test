@@ -17,7 +17,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({}),
     new webpack.ProvidePlugin({
-      _: "lodash",
+      join: ["lodash", "join"],
     }),
   ],
   output: {
