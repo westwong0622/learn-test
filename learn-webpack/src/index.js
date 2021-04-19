@@ -1,3 +1,5 @@
+const { file, parse } = require("./globals.js");
+
 function component() {
   const element = document.createElement("div");
 
@@ -5,6 +7,8 @@ function component() {
   element.innerHTML = join(["Hello", "webpack"], " ");
 
   this.alert("Hmmm, this probably isn't a great idea...");
+  console.log(file);
+  console.log(parse);
 
   return element;
 }
