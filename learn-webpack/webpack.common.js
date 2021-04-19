@@ -1,4 +1,5 @@
 const path = require("path");
+const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
@@ -13,7 +14,12 @@ module.exports = {
       },
     ],
   },
-  plugins: [new HtmlWebpackPlugin({})],
+  plugins: [
+    new HtmlWebpackPlugin({}),
+    new webpack.ProvidePlugin({
+      _: "lodash",
+    }),
+  ],
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "[name].[contenthash].js",
