@@ -12,6 +12,10 @@ module.exports = {
         test: /\.css$/,
         use: ["style-loader", "css-loader"],
       },
+      {
+        test: require.resolve("./src/index.js"),
+        use: "imports-loader?wrapper=window",
+      },
     ],
   },
   plugins: [
